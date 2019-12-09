@@ -38,8 +38,8 @@ void displayInfo()
     Serial.print(F(","));
     Serial.print(gps.location.lng(), 6); //print longitude
     Serial.println();
+    delay(1000);
     Serial.print(F("GPS Strength: ")); Serial.print(snr.value()); //print gps strength (SNR) 
-    
   }
   else
   {
